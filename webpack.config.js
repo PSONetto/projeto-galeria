@@ -1,10 +1,9 @@
 // Imports de dependências e plugins
 const webpack = require('webpack')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 // Variáveis e Constantes
 const devMode = process.env.NODE_ENV !== 'production'
@@ -16,7 +15,7 @@ module.exports = {
         main: './src/index.js'
     },
     devServer: {
-        contentBase: './build',
+        static: './build',
         port: 9000,
     },
     optimization: {
@@ -30,10 +29,12 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: 'style.css' }),
-        new CopyWebpackPlugin([
-            { context: 'src/', from: '**/*.html' },
-            { context: 'src/', from: 'imgs/**/*' }
-        ]),
+        new CopyPlugin({
+            patterns: [
+                { context: 'src/', from: '**/*.html' },
+                { context: 'src/', from: 'imgs/**/*' }
+            ]
+        }),
         new TerserPlugin({
             parallel: true,
             terserOptions: {
