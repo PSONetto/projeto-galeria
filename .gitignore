@@ -1,5 +1,4 @@
-// Dependências de desenvolvimento
-node_module
-
-// Produção
-build
+logs/
+node_modules/
+build/
+.DS_Store
