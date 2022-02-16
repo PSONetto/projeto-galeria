@@ -1,0 +1,5 @@
+// Dependências de desenvolvimento
+node_module
+
+// Produção
+build
