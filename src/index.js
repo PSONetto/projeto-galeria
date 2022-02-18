@@ -7,3 +7,4 @@ import 'bootstrap'
 
 // Arquivos JS próprios
 import './js/core/includes'
+import './js/plugins/hoverEmphasis'
