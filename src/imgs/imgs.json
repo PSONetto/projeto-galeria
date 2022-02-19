@@ -1,0 +1,154 @@
+[
+    {
+        "name": "athens-1",
+        "city": "athens"
+    },
+    {
+        "name": "bangkok-1",
+        "city": "bangkok"
+    },
+    {
+        "name": "barcelona-1",
+        "city": "barcelona"
+    },
+    {
+        "name": "berlin-1",
+        "city": "berlin"
+    },
+    {
+        "name": "berlin-2",
+        "city": "berlin"
+    },
+    {
+        "name": "brandenburg-1",
+        "city": "brandenburg"
+    },
+    {
+        "name": "brandenburg-2",
+        "city": "brandenburg"
+    },
+    {
+        "name": "brandenburg-3",
+        "city": "brandenburg"
+    },
+    {
+        "name": "bremen-1",
+        "city": "bremen"
+    },
+    {
+        "name": "budapest-1",
+        "city": "budapest"
+    },
+    {
+        "name": "budapest-2",
+        "city": "budapest"
+    },
+    {
+        "name": "dubai-1",
+        "city": "dubai"
+    },
+    {
+        "name": "florence-1",
+        "city": "florence"
+    },
+    {
+        "name": "florence-2",
+        "city": "florence"
+    },
+    {
+        "name": "florence-3",
+        "city": "florence"
+    },
+    {
+        "name": "london-1",
+        "city": "london"
+    },
+    {
+        "name": "london-2",
+        "city": "london"
+    },
+    {
+        "name": "london-3",
+        "city": "london"
+    },
+    {
+        "name": "london-4",
+        "city": "london"
+    },
+    {
+        "name": "milan-1",
+        "city": "milan"
+    },
+    {
+        "name": "nyc-1",
+        "city": "nyc"
+    },
+    {
+        "name": "nyc-2",
+        "city": "nyc"
+    },
+    {
+        "name": "nyc-3",
+        "city": "nyc"
+    },
+    {
+        "name": "nyc-4",
+        "city": "nyc"
+    },
+    {
+        "name": "osaka-1",
+        "city": "osaka"
+    },
+    {
+        "name": "osaka-2",
+        "city": "osaka"
+    },
+    {
+        "name": "osaka-3",
+        "city": "osaka"
+    },
+    {
+        "name": "paris-1",
+        "city": "paris"
+    },
+    {
+        "name": "paris-2",
+        "city": "paris"
+    },
+    {
+        "name": "paris-3",
+        "city": "paris"
+    },
+    {
+        "name": "paris-4",
+        "city": "paris"
+    },
+    {
+        "name": "paris-5",
+        "city": "paris"
+    },
+    {
+        "name": "prague-1",
+        "city": "prague"
+    },
+    {
+        "name": "rome-1",
+        "city": "rome"
+    },
+    {
+        "name": "stpetersburg-1",
+        "city": "stpetersburg"
+    },
+    {
+        "name": "stpetersburg-2",
+        "city": "stpetersburg"
+    },
+    {
+        "name": "tokyo-1",
+        "city": "tokyo"
+    },
+    {
+        "name": "venice-1",
+        "city": "venice"
+    }
+]
