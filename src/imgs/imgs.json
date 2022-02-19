@@ -4,10 +4,6 @@
         "city": "athens"
     },
     {
-        "name": "bangkok-1",
-        "city": "bangkok"
-    },
-    {
         "name": "barcelona-1",
         "city": "barcelona"
     },
@@ -117,14 +113,6 @@
     },
     {
         "name": "paris-3",
-        "city": "paris"
-    },
-    {
-        "name": "paris-4",
-        "city": "paris"
-    },
-    {
-        "name": "paris-5",
         "city": "paris"
     },
     {
