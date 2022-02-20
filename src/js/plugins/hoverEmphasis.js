@@ -2,11 +2,11 @@ import $ from 'jquery'
 
 import { onLoadHtmlSucces } from '../core/includes'
 
-function pointerIn() {
+function changeColorIn() {
     $(this).removeClass('text-white').addClass('text-info')
 }
 
-function pointerOut() {
+function changeColorOut() {
     $(this).removeClass('text-info').addClass('text-white')
 }
 
@@ -15,5 +15,5 @@ $.fn.hoverEmphasis = function(handlerIn, handlerOut) {
 }
 
 onLoadHtmlSucces(function() {
-    $('a.hover-emphasis').hoverEmphasis(pointerIn, pointerOut)
+    $('a.hover-emphasis').hoverEmphasis(changeColorIn, changeColorOut)
 })
