@@ -11,11 +11,11 @@ export function onLoadHtmlSuccess(callback) {
 }
 
 // Carrega páginas html ajax.
-function loadIncludes (parent) {
+function loadIncludes(parent) {
     // Seta o body como default parent.
-    if(!parent) parent = 'body'
+    if (!parent) parent = 'body'
 
-    $(parent).find('[include]').each(function(i, e) {
+    $(parent).find('[include]').each(function (i, e) {
         // Atribui o path para o html contido no atributo include à constante url.
         const url = $(e).attr('include')
 
@@ -27,7 +27,7 @@ function loadIncludes (parent) {
                 $(e).html(data)
                 $(e).removeAttr('include')
 
-                $(document).on('html', (loadHtmlSuccessCallbacks.forEach(callback => callback(data))))
+                loadHtmlSuccessCallbacks.forEach(callback => callback(data))
                 loadIncludes(e)
             }
         })

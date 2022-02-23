@@ -16,6 +16,7 @@ $(function () {
             imgJSON.forEach(element => {
                 citySet.add(element.city)
             })
+            citySet.add('All')
         }
     })
 })
