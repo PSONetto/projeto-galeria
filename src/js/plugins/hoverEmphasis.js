@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-import { onLoadHtmlSucces } from '../core/includes'
+import { onLoadHtmlSuccess } from '../core/includes'
 
 // handlerIn
 function changeColorIn() {
@@ -17,7 +17,8 @@ $.fn.hoverEmphasis = function(handlerIn, handlerOut) {
     this.on('mouseenter', handlerIn).on('mouseleave', handlerOut)
 }
 
-onLoadHtmlSucces(function() {
-    // Adiciona ênfase a um link.
+function addHoverEmphasis() {
     $('a.hover-emphasis').hoverEmphasis(changeColorIn, changeColorOut)
-})
+}
+
+onLoadHtmlSuccess(addHoverEmphasis)

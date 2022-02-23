@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-import { onLoadHtmlSucces } from '../core/includes'
+import { onLoadHtmlSuccess } from '../core/includes'
 import { imgJSON } from '../core/loadImgs'
 
 // Cria uma div dentro do target, seta a classe col por padrão.
@@ -20,7 +20,7 @@ $.fn.addImg = function (path, classes, alt, city) {
     return this
 }
 
-onLoadHtmlSucces(function () {
+function addImgs() {
     imgJSON.forEach(element => {
         const imgSrc = `imgs/${element.name}.jpg`
         const imgClass = 'img-fluid img-thumbnail shadow mb-4'
@@ -31,4 +31,7 @@ onLoadHtmlSucces(function () {
             .find(':last')
             .addImg(imgSrc, imgClass, imgName, imgCity)
     })
-})
+}
+
+
+onLoadHtmlSuccess(addImgs)

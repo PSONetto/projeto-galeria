@@ -15,6 +15,3 @@ import './js/core/loadImgs'
 import './js/plugins/addImgs'
 import './js/plugins/addButtons'
 import './js/plugins/hoverEmphasis'
-
-// Assets
-import './imgs/imgs.json'

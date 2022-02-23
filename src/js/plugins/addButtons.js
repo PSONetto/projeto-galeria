@@ -1,7 +1,10 @@
 import $ from 'jquery'
 
-import { onLoadHtmlSucces } from '../core/includes'
+import { onLoadHtmlSuccess } from '../core/includes'
 import { citySet } from '../core/loadImgs'
+
+const duration = 500
+
 
 // Formatação dos nomes das cidades.
 function formatName(string) {
@@ -14,17 +17,23 @@ function formatName(string) {
     }
 }
 
+function filterByCity(city) {
+    
+}
+
 $.fn.addButtons = function (text) {
     this.append($('<button>')
         .attr('type', 'button')
-        .addClass('btn btn-outline-dark m-1').text(text))
+        .addClass('btn btn-outline-dark m-1')
+        .text(text))
     return this
 }
 
-onLoadHtmlSucces(function () {
-    console.log(citySet)
+function addButtonsGroup() {
     for (let element of citySet) {
         let cityName = formatName(element)
         $('#city-buttons').addButtons(cityName)
     }
-})
+}
+
+onLoadHtmlSuccess(addButtonsGroup)

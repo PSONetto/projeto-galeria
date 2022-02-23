@@ -4,8 +4,8 @@ import $ from 'jquery'
 const loadHtmlSuccessCallbacks = []
 
 // Adiciona uma callback ao array quando carrega uma página html com sucesso.
-export function onLoadHtmlSucces(callback) {
-    if(!loadHtmlSuccessCallbacks.includes(callback)) {
+export function onLoadHtmlSuccess(callback) {
+    if (!loadHtmlSuccessCallbacks.includes(callback)) {
         loadHtmlSuccessCallbacks.push(callback)
     }
 }
@@ -27,7 +27,7 @@ function loadIncludes (parent) {
                 $(e).html(data)
                 $(e).removeAttr('include')
 
-                loadHtmlSuccessCallbacks.forEach(callback => callback(data))
+                $(document).on('html', (loadHtmlSuccessCallbacks.forEach(callback => callback(data))))
                 loadIncludes(e)
             }
         })
