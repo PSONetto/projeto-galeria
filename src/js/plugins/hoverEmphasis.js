@@ -13,7 +13,7 @@ function changeColorOut() {
 }
 
 // Basicamente o método hover refeito.
-$.fn.hoverEmphasis = function(handlerIn, handlerOut) {
+$.fn.hoverEmphasis = function (handlerIn, handlerOut) {
     this.on('mouseenter', handlerIn).on('mouseleave', handlerOut)
 }
 

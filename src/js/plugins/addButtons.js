@@ -27,7 +27,7 @@ $.fn.addButtons = function (text, buttonId) {
 }
 
 function addButtonsGroup() {
-    
+
     for (let element of citySet) {
         let cityName = formatName(element)
         $('#city-buttons').addButtons(cityName, element)
